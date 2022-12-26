@@ -1,0 +1,302 @@
+body {
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+}
+body nav {
+  background-color: rgba(45, 45, 45, 0.99);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+body nav ul {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+body nav ul li {
+  padding: 0;
+}
+body nav ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  text-decoration: none;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+}
+body nav ul li a:hover {
+  color: white;
+}
+body nav ul li a img {
+  opacity: 80%;
+}
+body .unicef {
+  background-color: #f5f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85em;
+}
+body .unicef a {
+  text-decoration: none;
+  color: #0066cc;
+}
+body .unicef a:hover {
+  text-decoration: underline;
+}
+body .unicef img {
+  display: inline-block;
+  height: 32px;
+  margin: 20px;
+}
+body main .main-elem {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+body main .main-elem .main-elem-texts {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .main-elem .main-elem-texts h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+body main .main-elem .main-elem-texts h2 {
+  font-size: 1.5em;
+  font-weight: 200;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-weight: bolder;
+}
+body main .main-elem .main-elem-texts > .sublinks {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  pointer-events: none;
+}
+body main .main-elem .main-elem-texts > .sublinks > a {
+  z-index: 2;
+  pointer-events: all;
+}
+body main .main-elem .main-elem-texts > .sublinks > a:hover {
+  text-decoration: underline;
+}
+body main .main-elem img {
+  position: relative;
+  z-index: -1;
+  max-width: 230%;
+  object-fit: contain;
+  margin: 0;
+}
+body main .main-elem > a.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+body main .main-elem a {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 1.3em;
+}
+body main .small-elems-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  align-self: center;
+  overflow: hidden;
+}
+body main .small-elems-container .small-elem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 49%;
+  margin: 0.5%;
+  overflow: hidden;
+  position: relative;
+}
+body main .small-elems-container .small-elem .small-elem-texts {
+  width: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .small-elems-container .small-elem .small-elem-texts h1 {
+  margin: 0;
+}
+body main .small-elems-container .small-elem .small-elem-texts h2 {
+  font-weight: 300;
+}
+body main .small-elems-container .small-elem .small-elem-texts > .sublinks {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  pointer-events: none;
+  width: 300px;
+}
+body main .small-elems-container .small-elem .small-elem-texts > .sublinks > a {
+  z-index: 2;
+  pointer-events: all;
+}
+body main .small-elems-container .small-elem .small-elem-texts > .sublinks > a:hover {
+  text-decoration: underline;
+}
+body main .small-elems-container .small-elem img {
+  position: relative;
+  z-index: -1;
+  max-width: 150%;
+  object-fit: contain;
+}
+body main .small-elems-container .small-elem > a.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+body main .small-elems-container .small-elem a {
+  text-decoration: none;
+  color: #0066cc;
+  font-size: 1.3em;
+}
+body main .sublinks > a::after {
+  content: " >";
+  color: #0066cc;
+  text-decoration: none;
+}
+body footer {
+  width: auto;
+  background-color: #f5f5f7;
+  padding: 1% 17% 2% 17%;
+}
+body footer p {
+  font-size: 12px;
+  color: #6e6e73;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+body footer p > a {
+  color: #424245;
+  text-decoration: none;
+}
+body footer p > a:hover {
+  text-decoration: underline;
+}
+body footer .footer-box {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  flex-wrap: wrap;
+}
+body footer .footer-box .footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body footer .footer-box .footer-column .footer-list {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body footer .footer-box .footer-column .footer-list h4 {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+}
+body footer .footer-box .footer-column .footer-list ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+body footer .footer-box .footer-column .footer-list ul li {
+  margin: 12px 0 0 0;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+body footer .footer-box .footer-column .footer-list ul li a {
+  text-decoration: none;
+  color: rgba(45, 45, 45, 0.95);
+}
+body footer .footer-box .footer-column .footer-list ul li a:hover {
+  text-decoration: underline;
+}
+body footer .copyright-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+body footer .copyright-nav p {
+  margin: 0;
+}
+body footer .copyright-nav .copyright-nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .copyright-nav .copyright-nav-left .vertical {
+  transform: rotate(90deg);
+  width: 10px;
+  opacity: 50%;
+}
+body footer .copyright-nav .copyright-nav-left nav {
+  padding: 0;
+  margin: 0 30px 0 30px;
+  background-color: inherit;
+  top: 30%;
+  left: 0;
+  bottom: 30%;
+  right: 0;
+}
+body footer .copyright-nav .copyright-nav-left nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+body footer .copyright-nav .copyright-nav-left nav ul li {
+  padding: 0;
+}
+body footer .copyright-nav .copyright-nav-left nav ul li a {
+  color: rgba(45, 45, 45, 0.95);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+body footer .copyright-nav .copyright-nav-left nav ul li a:hover {
+  text-decoration: underline;
+}
+body footer .footer-bottom > a {
+  color: #0066cc;
+}
+
+/*# sourceMappingURL=styles.css.map */
